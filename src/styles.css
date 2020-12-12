@@ -1,0 +1,141 @@
+.App {
+  /* font-family: sans-serif;
+  text-align: center; */
+  margin: 0;
+  padding: 0;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: ceneter;
+  font-family: "Roboto", sans-serif;
+  background-color: #333;
+}
+.chart {
+  width: 600px;
+  height: 300px;
+  display: block;
+}
+.numbers {
+  color: #fff;
+  margin-top: 30px;
+  padding: 0;
+  width: 50px;
+  height: 100%;
+  display: inline-block;
+  float: left;
+}
+
+.numbers li {
+  list-style: none;
+  height: 55px;
+  position: relative;
+}
+.numbers span {
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.bars {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  background: #555;
+  margin: 20px;
+  padding: 0;
+  display: inline-block;
+  width: 500px;
+  height: 200;
+  box-shadow: 0 0 10px 0 #555;
+  border-radius: 5px;
+}
+.bars li {
+  display: table-cell;
+  width: 100px;
+  height: 300px;
+  position: relative;
+}
+.bars span {
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  text-align: center;
+}
+.bars .bar1 {
+  display: block;
+  background: #ff3333;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 25px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(255, 51, 51, 0.5);
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+.bars .bar2 {
+  display: block;
+  background: #0039fc;
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 25px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0, 57, 252, 0.5);
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+.bars .bar3 {
+  display: block;
+  background: #007510;
+  width: 50px;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 25px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0, 117, 16, 0.5);
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+.bars .bar4 {
+  display: block;
+  background: #ffe800;
+  width: 50px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 25px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(255, 232, 0, 0.5);
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+.bars .bar1:hover {
+  background: #fd7b7b;
+  box-shadow: 0 0 10px 0 rgba(253, 123, 123, 0.5);
+  cursor: pointer;
+}
+.bars .bar2:hover {
+  background: #3f7cff;
+  box-shadow: 0 0 10px 0 rgba(63, 124, 255, 0.5);
+  cursor: pointer;
+}
+.bars .bar3:hover {
+  background: #30cb46;
+  box-shadow: 0 0 10px 0 rgba(48, 203, 70, 0.5);
+  cursor: pointer;
+}
+.bars .bar4:hover {
+  background: #fef176;
+  box-shadow: 0 0 10px 0 rgba(254, 241, 118, 0.5);
+  cursor: pointer;
+}
+.bars .bar1:before {
+  color: #fff;
+  content: attr(data-percentage) "%";
+  position: 20px;
+}
